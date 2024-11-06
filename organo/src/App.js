@@ -1,11 +1,11 @@
-import Banner from './components/Banner';
+import Banner from './components/Banner/Banner.js';
+import Formulario from './components/Formulario/index.js';
 
 function App() {
   return (
     <div className="App">
       <Banner />
-      <header className="App-header">        
-      </header>
+      <Formulario />
     </div>
   );
 }
