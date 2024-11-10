@@ -3,7 +3,7 @@ import Botao from '../Botao';
 import CampoTexto from '../CampoTexto';
 import ListaSuspensa from '../ListaSuspensa';
 import './Formulario.css';
-const Formulario = () => {
+const Formulario = (props) => {
 
     const times = [
         'Programação',
@@ -22,7 +22,12 @@ const Formulario = () => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault();
-        alert("Form submetido com sucesso!\nDados: \n" + nome + "\n" + cargo + "\n" + imagem + "\n" + time);
+        props.cadastrarColaborador({
+            nome,
+            cargo,
+            imagem,
+            time
+        })
     }
 
     return (
