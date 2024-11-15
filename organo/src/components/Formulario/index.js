@@ -3,7 +3,7 @@ import Botao from '../Botao';
 import CampoTexto from '../CampoTexto';
 import ListaSuspensa from '../ListaSuspensa';
 import './Formulario.css';
-const Formulario = (props) => {    
+const Formulario = (props) => {
 
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
@@ -18,6 +18,11 @@ const Formulario = (props) => {
             imagem,
             time
         })
+
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
     }
 
     return (
